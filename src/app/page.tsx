@@ -28,9 +28,9 @@ export default async function Home() {
       </div>
 
       {/* Konten Blog */}
-      <main className="flex-1 mt-10 py-4 px-28 max-sm:px-5 grid gap-4 grid-cols-1 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2">
-        {data.map((blog, idx) => (
-          <div key={idx}>
+      <main className="flex-1 mt-10 py-4 px-5 sm:px-10 md:px-20 grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        {data.map((blog, idx)  => (
+          <div key={idx} data-cy="blog-item">
             <div className="relative flex w-full max-w-[250px] h-[200px]">
               <Image
                 src={blog.thumbnail || "/default.jpg"}

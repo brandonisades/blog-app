@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function BlogCard({ blog }: { blog: iBlog }) {
   return (
-    <Link href={`/blog/${blog.objectId}`}>
+    <Link href={`/blog/${blog.objectId}`}data-cy="blog-item">
       <div className="flex flex-row-reverse items-center justify-between w-full max-sm:py-4 max-sm:border-b max-sm:border-b-gray-300 sm:block">
         <div className="h-[50px] w-[90px] sm:h-[150px] sm:w-full relative rounded-md overflow-hidden">
           <Image
